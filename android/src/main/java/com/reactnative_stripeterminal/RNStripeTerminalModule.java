@@ -948,4 +948,14 @@ public class RNStripeTerminalModule extends ReactContextBaseJavaModule implement
             sendEventWithName(EVENT_DID_FINISH_INSTALLING_UPDATE, serializeUpdate(update));
         }
     }
+
+    @ReactMethod
+    public void addListener(String eventName) {
+        // Keep: Required for RN built in Event Emitter Calls.
+    }
+
+    @ReactMethod
+    public void removeListeners(Integer count) {
+        // Keep: Required for RN built in Event Emitter Calls.
+    }
 }
