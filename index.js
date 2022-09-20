@@ -72,6 +72,8 @@ class StripeTerminal {
         );
     });
 
+    this.listener.removeListener("requestConnectionToken");
+
     this._createListeners([
       "log",
       "readersDiscovered",
