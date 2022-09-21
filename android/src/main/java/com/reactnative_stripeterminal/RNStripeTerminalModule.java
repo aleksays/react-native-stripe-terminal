@@ -681,7 +681,7 @@ public class RNStripeTerminalModule extends ReactContextBaseJavaModule implement
             }
         }
 
-        if (selectedReader != null) {
+        if (selectedReader != null && locationId != null) {
             BluetoothConnectionConfiguration config = new BluetoothConnectionConfiguration(locationId);
             Terminal.getInstance().connectBluetoothReader(selectedReader, config, this, new ReaderCallback() {
                 @Override
